@@ -1,5 +1,3 @@
-# cy4kJ2Td
-
 Quick start:
 
 ```
@@ -32,7 +30,7 @@ Stretch Goals:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://jordansgit.github.io/we-are-the-champions/](https://jordansgit.github.io/we-are-the-champions/)
 
 ### Built with
 

@@ -4,10 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>We are the Champions</title>
+
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <h1>We are the Champions</h1>
+  <div class="container">
+    <header>
+      <img class="logo" src="./assets/freddie.png">
+      <h1 class="title">We are the Champions</h1>  
+    </header>
+  
+    <form class="form">
+        <textarea name="endorsement-input-body" class="endorsement-input" id="endorsement-input-body" placeholder="Write your endorsement here"></textarea>
+        <div class="flex">
+          <input type="text" class="endorsement-input" name="endorsement-input-from" id="endorsement-input-from" placeholder="From">
+          <input type="text" class="endorsement-input" name="endorsement-input-to" id="endorsement-input-to" placeholder="To">  
+        </div>
+
+        <button class="endorsement-submit">Publish</button>    
+    </form>
+  
+    <section class="endorsements">
+        <h2 class="endorsements-heading">- Endorsements - </h2>
+        <ul class="endorsments-list">
+          <li class="endorsement-item">
+            <p class="endorsement-to">
+
+            </p>
+            <p class="endorsement-body">
+              Hi Bob! Your React Router course is so good. The students are going to LOVE IT. I’m so excited for the launch :) 🔥 Per
+            </p>
+            <p class="endorsement-from">
+
+            </p>
+            <p class="likes-count">
+              
+            </p>
+          </li>
+          <li class="endorsement-item">
+            <p class="endorsement-to">
+
+            </p>
+            <p class="endorsement-body">
+              Abdellah! That transcription feature you completed for Scrimba 3.0 is amazing. I know you’ve been working hard on it for several months now. 👏👏👏 Really good work 🙌 From Sindre
+            </p>
+            <p class="endorsement-from">
+            </p>
+            <p class="likes-count">
+              
+            </p>
+          </li>
+          <li class="endorsement-item">
+            <p class="endorsement-to">
+
+            </p>
+            <p class="endorsement-body">
+              Leanne! Thank you so much for helping me with the March accounting. Saved so much time because of you! 💜 Frode
+            </p>
+            <p class="endorsement-from">
+
+            </p>
+            <p class="likes-count">
+              
+            </p>
+          </li>
+        </ul>    
+    </section>
+  
+  </div>
+
   <script src="./js/script.js"></script>
 </body>
 </html>

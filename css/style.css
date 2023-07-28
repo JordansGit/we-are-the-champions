@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body, h1, p, ul, button {
+body, h1, p, ul, button, textarea, input {
   margin: 0;
   padding: 0;
 }
@@ -13,7 +13,7 @@ ul {
   list-style-type: none;
 }
 
-button {
+button, textarea, input {
   border: none;
   outline: none;
   font-size: 1rem;
@@ -23,4 +23,139 @@ img {
   max-width: 100%;
   display: block;
 }
-  
+
+textarea {
+  resize: none;
+}
+
+/* Colours */ 
+
+:root {
+  --bg-body: #1B1924;
+  --bg-input: #444059;
+  --bg-button: #28A9F1;
+  --text-input: #8F8F8F;
+  --text-button: #04131C;
+  --text-endorsement: #1B1924;
+}
+
+/* ==============
+   Typography 
+================= */ 
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+*/ 
+
+.title, .endorsement-submit, .endorsements-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+
+.endorsement-input, .endorsement-item {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.title, .endorsements-heading {
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5625rem;
+}
+
+.endorsement-input {
+  font-size: 0.9375rem; 
+}
+
+.endorsement-submit {
+  font-size: 1.375rem;
+}
+
+.endorsements-heading {
+  font-size: 1.25rem;
+}
+
+.endorsement-item {
+  font-size: 0.75rem; 
+}
+
+/* ==============
+   Layout 
+================= */ 
+
+/* General */ 
+
+body {
+  background: var(--bg-body);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 390px; 
+  padding: 0 36px;
+}
+
+#endorsement-input-body, .endorsement-submit, .endorsement-item {
+  width: 100%;
+}
+
+/* Header */ 
+.logo {
+  width: 90px;
+  margin: 51px auto 0 auto;
+}
+
+.title {
+  margin: 0.8em 0 0.6em 0;
+}
+
+/* Form */ 
+.form {
+  width: 100%;
+}
+
+.endorsement-input, .endorsement-submit {
+  border-radius: 8px;
+}
+
+.endorsement-input {
+  background: var(--bg-input);
+  color: var(--text-input);
+}
+
+#endorsement-input-body {
+  padding: 1em;
+  height: 118px;
+}
+
+.flex {
+  display: flex;
+  gap: 0.5em;
+  margin: 0.7em 0 1em 0;
+}
+
+input {
+  width: 50%;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.endorsement-submit {
+  padding: 0.86em;
+  background: var(--bg-button);
+  color: var(--text-button);
+  cursor: pointer;
+}
+
+/* Endorsements */ 
+.endorsement-item {
+  background: white;
+  color: var(--text-endorsement);
+  margin-bottom: 1rem;
+  padding: 1em;
+}
